@@ -12,6 +12,9 @@ router.get("/category/:category", menuItemController.getMenuItemsByCategory);
 // Search by menuName or price
 router.get("/search/term", menuItemController.getMenuItemsByCategory);
 
+// Search menu items by name
+router.get("/search", menuItemController.searchMenuItemsByName);
+
 // Get menu item by ID
 router.get("/:id", menuItemController.getMenuItemById);
 
